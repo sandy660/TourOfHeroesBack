@@ -19,8 +19,8 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:postgresql://ec2-54-145-102-149.compute-1.amazonaws.com:5432/d587ot89l3k4ol
     driver-class-name: org.postgresql.Driver
-    username: fedgcdabmmdxoj
-    password: 2576b4f0e7273dbe6a1dbe7e9d50a8764bb13886b16b766dadac43c085ba562c
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
     hikari:
       idle-timeout: 10000
       maximum-pool-size: 5
